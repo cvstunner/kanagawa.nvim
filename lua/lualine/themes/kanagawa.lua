@@ -4,7 +4,7 @@ local kanagawa = {}
 
 kanagawa.normal = {
   a = { bg = theme.vcs.changed, fg = theme.ui.bg_m3 },
-  b = { bg = theme.syn.identifier, fg = theme.syn.fun },
+  b = { bg = theme.syn.operator, fg = theme.syn.fun },
   c = { bg = theme.ui.bg_p1, fg = theme.ui.fg },
 }
 
