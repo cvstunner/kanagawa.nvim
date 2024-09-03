@@ -4,28 +4,28 @@ local kanagawa = {}
 
 kanagawa.normal = {
   a = { bg = theme.vcs.changed, fg = theme.ui.bg_m3 },
-  b = { bg = theme.ui.bg_p1, fg = theme.syn.fun },
-  c = { fg = theme.ui.fg },
+  b = { bg = theme.ui.bg_p1, fg = theme.vcs.changed },
+  c = { fg = theme.syn.operator },
 }
 
 kanagawa.insert = {
   a = { bg = theme.syn.operator, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.operator },
+  b = { bg = theme.ui.bg_p1, fg = theme.syn.operator },
 }
 
 kanagawa.command = {
   a = { bg = theme.syn.operator, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.operator },
+  b = { bg = theme.ui.bg_p1, fg = theme.syn.operator },
 }
 
 kanagawa.visual = {
   a = { bg = theme.syn.keyword, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.keyword },
+  b = { bg = theme.ui.bg_p1, fg = theme.syn.keyword },
 }
 
 kanagawa.replace = {
   a = { bg = theme.syn.constant, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.constant },
+  b = { bg = theme.ui.bg_p1, fg = theme.syn.constant },
 }
 
 kanagawa.inactive = {
