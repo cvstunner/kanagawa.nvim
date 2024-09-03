@@ -3,14 +3,14 @@ local theme = require("kanagawa.colors").setup().theme
 local kanagawa = {}
 
 kanagawa.normal = {
-  a = { bg = theme.syn.identifier, fg = theme.ui.bg_m3 },
+  a = { bg = theme.vcs.changed, fg = theme.ui.bg_m3 },
   b = { bg = theme.ui.bg_p1, fg = theme.syn.fun },
   c = { fg = theme.ui.fg },
 }
 
 kanagawa.insert = {
-  a = { bg = theme.diag.ok, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.diag.ok },
+  a = { bg = theme.syn.operator, fg = theme.ui.bg },
+  b = { bg = theme.ui.bg, fg = theme.syn.operator },
 }
 
 kanagawa.command = {
