@@ -1,43 +1,44 @@
-local theme = require("kanagawa.colors").setup().theme
+local colors = require("kanagawa.colors").setup()
+local theme = colors.theme
 
 local kanagawa = {}
 
 kanagawa.normal = {
-  a = { bg = theme.syn.fun, fg = theme.ui.bg_m3 },
-  b = { bg = theme.diff.change, fg = theme.syn.fun },
-  c = { bg = theme.ui.bg_p1, fg = theme.ui.fg },
+	a = { bg = theme.modes.normal, fg = theme.ui.bg_m3 },
+	b = { bg = theme.ui.bg_p2, fg = theme.modes.normal },
+	c = { bg = theme.ui.bg_p1, fg = theme.ui.fg_gray },
 }
 
 kanagawa.insert = {
-  a = { bg = theme.diag.ok, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.diag.ok },
+	a = { bg = theme.modes.insert, fg = theme.ui.bg },
+	b = { bg = theme.ui.bg_p2, fg = theme.modes.insert },
 }
 
 kanagawa.command = {
-  a = { bg = theme.syn.operator, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.operator },
+	a = { bg = theme.modes.command, fg = theme.ui.bg },
+	b = { bg = theme.ui.bg_p2, fg = theme.modes.command },
 }
 
 kanagawa.visual = {
-  a = { bg = theme.syn.keyword, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.keyword },
+	a = { bg = theme.modes.visual, fg = theme.ui.bg },
+	b = { bg = theme.ui.bg_p2, fg = theme.modes.visual },
 }
 
 kanagawa.replace = {
-  a = { bg = theme.syn.constant, fg = theme.ui.bg },
-  b = { bg = theme.ui.bg, fg = theme.syn.constant },
+	a = { bg = theme.modes.replace, fg = theme.ui.bg },
+	b = { bg = theme.ui.bg_p2, fg = theme.modes.replace },
 }
 
 kanagawa.inactive = {
-  a = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
-  b = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim, gui = "bold" },
-  c = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
+	a = { bg = theme.ui.bg_m3, fg = theme.ui.fg_gray },
+	b = { bg = theme.ui.bg_m3, fg = theme.ui.fg_gray, gui = "bold" },
+	c = { bg = theme.ui.bg_m3, fg = theme.ui.fg_gray },
 }
 
 if vim.g.kanagawa_lualine_bold then
-  for _, mode in pairs(kanagawa) do
-    mode.a.gui = "bold"
-  end
+	for _, mode in pairs(kanagawa) do
+		mode.a.gui = "bold"
+	end
 end
 
 return kanagawa
