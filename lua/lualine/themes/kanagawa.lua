@@ -3,7 +3,7 @@ local theme = require("kanagawa.colors").setup().theme
 local kanagawa = {}
 
 kanagawa.normal = {
-  a = { bg = theme.vcs.changed, fg = theme.ui.bg_m3 },
+  a = { bg = theme.syn.identifier, fg = theme.ui.bg_m3 },
   b = { bg = theme.ui.bg_p1, fg = theme.syn.fun },
   c = { fg = theme.ui.fg },
 }
