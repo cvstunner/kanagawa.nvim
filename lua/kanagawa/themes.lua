@@ -264,11 +264,11 @@ return {
                 special3   = palette.dragonRed,
             },
             diag = {
-                error   = palette.samuraiRed,
-                ok      = palette.springGreen,
-                warning = palette.roninYellow,
+                error   = palette.dragonRed,
+                ok      = palette.dragonYellow,
+                warning = palette.dragonYellow,
                 info    = palette.dragonBlue,
-                hint    = palette.waveAqua1,
+                hint    = palette.dragonViolet,
             },
             diff = {
                 add    = palette.winterGreen,
