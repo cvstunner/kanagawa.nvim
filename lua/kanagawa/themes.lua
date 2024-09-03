@@ -89,6 +89,13 @@ return {
     ---@return ThemeColors
     wave = function(palette)
         return {
+    		modes = {
+    			normal = palette.dragonYellow,
+    			insert = palette.dragonRed,
+    			visual = palette.springViolet1,
+    			replace = palette.dragonRed,
+    			command = palette.dragonYellow,
+    		},
             ui = {
                 fg         = palette.fujiWhite,
                 fg_dim     = palette.oldWhite,
